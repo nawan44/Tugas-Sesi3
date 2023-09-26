@@ -42,9 +42,10 @@
 		</div>
 	</nav> -->
 
+<body>
 
     <header>
-        <nav>
+        <!-- <nav>
             <div class="nav-logo">
                 <img src="asset/image/logo/logo-nav.png" />
             </div>
@@ -58,7 +59,48 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
+        <!-- <nav class="navbar-expand-xl navbar navbar-fixed-top">
+            <div class="menu-icon">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html"> 
+                    AAAA
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li> <a href="our-operation.html"> Our Operation</a></li>
+                    <li> <a href="our-management.html"> Our Management</a></li>
+                </ul>
+            </div>
+        </nav> -->
+        
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container">
+			<a class="navbar-brand" href="<?= base_url() ?>">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="<?= base_url('about') ?>">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="<?= base_url('contact') ?>">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="<?= base_url('faqs') ?>">Faqs</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
         <div class="container-header">
             <div class="row-header">
                 <img src="asset/image/logo/logo.png" class="logo-header" />
@@ -230,14 +272,15 @@
         <div class="social">
             <div class="social-medsos-center">
                 <div class="container-medsos" >
+                    
                     <a href="https://facebook.com">
-                        <i class='fa fa-facebook-square' style="color: #ffffff; font-size: 40px; float: left; padding: 24px;"></i>
+                        <i class='font-fa fa fa-facebook-square' ></i>
                     </a>
                     <a href="https://instagram.com">
-                        <i class='fa fa-instagram' style="color: #ffffff; font-size: 40px; float: left; padding: 24px;"> </i>
+                        <i class='font-fa fa fa-instagram'> </i>
                     </a>
                     <a href="https://linkedin.com">
-                        <i class='fa fa-linkedin-square' style="color: #ffffff; font-size: 40px; float: left; padding: 24px;"></i>
+                        <i class='font-fa fa fa-linkedin-square' ></i>
                     </a>
                 </div>
             </div>
@@ -246,5 +289,37 @@
             <p class="copyright">&copy; Rachwan all right reserved.</p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="<?= base_url('js/bootstrap.min.css') ?>"></script>
+    <script src="<?= base_url('js/bootstrap.bundle.min.js') ?>"></script>
+    <script>
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+                $('nav').addClass('panjang');
+
+            });
+        });
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() >= 500) {
+                $('nav').addClass('blue');
+                // $('transform-img img').addClass('bounce');
+                transform-img.classList.add("bounce");
+
+                
+            }
+
+            else {
+                $('nav').removeClass('blue');
+                transform-img.classList.remove("bounce");
+
+            }
+        })
+
+    </script>
+
+</body>
 
 </html>

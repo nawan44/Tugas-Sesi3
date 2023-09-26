@@ -196,9 +196,11 @@ footer {
     padding: 0 35px;
     width: 240px !important;
     height: 80px;
-    
 }
- 
+.font-fa{
+    color: #ffffff; font-size: 32px; float: left; padding: 12px;
+}
+
     .medsos {
         text-align: center;
         margin: 0 auto;
@@ -254,6 +256,9 @@ footer {
     width: 320px;
     height: 80px;
     /* background-color: green; */
+}
+.font-fa{
+    color: #ffffff; font-size: 40px; float: left; padding: 24px;
 }
  
     .medsos {
