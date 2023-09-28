@@ -78,7 +78,8 @@
 
         <div class="container-header">
             <div class="row-header">
-                <img src="../../public/asset/image/logo/logo.png" class="logo-header" />
+             <img src="'<?php echo base_url() ?> '/public/asset/image/logo/logo.png" />
+ 
             </div>
             <div>
                 <h1 class="brand-name">Rachwan</h1>
@@ -265,36 +266,7 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="<?= base_url('js/bootstrap.min.css') ?>"></script>
-    <script src="<?= base_url('js/bootstrap.bundle.min.js') ?>"></script>
-    <script>
-        $(document).ready(function () {
-            $(".menu-icon").on("click", function () {
-                $("nav ul").toggleClass("showing");
-                $('nav').addClass('panjang');
-
-            });
-        });
-
-        $(window).on("scroll", function () {
-            if ($(window).scrollTop() >= 500) {
-                $('nav').addClass('blue');
-                // $('transform-img img').addClass('bounce');
-                transform-img.classList.add("bounce");
-
-                
-            }
-
-            else {
-                $('nav').removeClass('blue');
-                transform-img.classList.remove("bounce");
-
-            }
-        })
-
-    </script>
-        </div>
+            </div>
     </div>
      
 

@@ -1,0 +1,12 @@
+Assalamu'alaikum. Berikut tugas sesi 3.
+
+Catatan :
+Menggunakan 
+PHP framework Code Igniter CSS framework Bootstrap 
+
+Ketika publik yang membuka url  maka akan tampilan publik.
+Ketika admin akan mengganti konten maka admin akan masuk ke url/admin
+Register / Login
+
+Sementara cuman bisa sampai sini saja.
+Belum CRUD konten
