@@ -1,50 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootcamp#3</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>" />
 
 
-    <link rel="stylesheet" href="<?= base_url('asset/css/style.css') ?>" />
-	<link rel="stylesheet" href="<?= base_url('asset/css/service.css') ?>" />
-	<link rel="stylesheet" href="<?= base_url('asset/css/media.css') ?>" />
-	<link rel="stylesheet" href="<?= base_url('asset/css/contact.css') ?>" />
-	<link rel="stylesheet" href="<?= base_url('asset/css/footer.css') ?>" />
-    
-</head>
 
+<?=$this->extend("layout")?>
+  
+<?=$this->section("content")?>
+  
+<div class="container">
+    <div class="row justify-content-md-center mt-5">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">EDIT KONTEN</a>
+                    <div class="d-flex">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="<?php echo base_url('/logout'); ?>">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-	<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand" href="<?= base_url() ?>">Home</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('about') ?>">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('contact') ?>">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('faqs') ?>">Faqs</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav> -->
-
-<body>
-
-    <header>
+            <header>
         <!-- <nav>
             <div class="nav-logo">
                 <img src="asset/image/logo/logo-nav.png" />
@@ -53,8 +30,6 @@
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a>
-                    </li>
-                    <li><a href="#work">Work</a>
                     </li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -86,7 +61,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
-								<ul class="navbar-nav">
+				<ul class="navbar-nav">
 					<li class="nav-item">
 						<a class="nav-link" href="<?= base_url('#about') ?>">About</a>
 					</li>
@@ -103,7 +78,7 @@
 
         <div class="container-header">
             <div class="row-header">
-                <img src="asset/image/logo/logo.png" class="logo-header" />
+                <img src="../../public/asset/image/logo/logo.png" class="logo-header" />
             </div>
             <div>
                 <h1 class="brand-name">Rachwan</h1>
@@ -319,7 +294,11 @@
         })
 
     </script>
+        </div>
+    </div>
+     
 
-</body>
 
-</html>
+</div>
+  
+<?=$this->endSection()?>
